@@ -57,7 +57,7 @@ cd TesteTecnico_Triggo
 
 #### 🔼 Opção 1: Upload direto do computador
 
-Rode o seguinte código no Colab:
+Rode o seguinte código no Colab em Importação e Testes do Dataset na parte Importando os dados CSV do dataset para fazer a limpeza dos dados coloque:
 
 ```python
 from google.colab import files
@@ -66,36 +66,17 @@ from google.colab import files
 uploaded = files.upload()
 ```
 
-Depois, você pode carregar os dados com:
-
-```python
-import pandas as pd
-
-customers = pd.read_csv('olist_customers_dataset.csv')
-orders = pd.read_csv('olist_orders_dataset.csv')
-# E assim por diante...
-```
 
 ---
 
 #### ☁️ Opção 2: Upload via Google Drive
 
 1. Coloque todos os arquivos `.csv` do dataset em uma pasta no seu Google Drive.
-2. Rode o código abaixo no Colab:
+2. Rode o código abaixo no Colab em Importação e Testes do Dataset na parte Importando os dados CSV do dataset para fazer a limpeza dos dados, coloque:
 
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-```
-
-3. Acesse os arquivos com o caminho adequado:
-
-```python
-caminho = '/content/drive/MyDrive/olist-dataset/'
-
-customers = pd.read_csv(caminho + 'olist_customers_dataset.csv')
-orders = pd.read_csv(caminho + 'olist_orders_dataset.csv')
-# E os demais arquivos...
 ```
 
 ---
